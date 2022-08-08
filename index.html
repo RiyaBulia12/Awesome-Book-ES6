@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width initial-scale=1.0">
+   <title>Awesome Books ES6</title>
+   <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+   <div class="container">
+      <header>
+         <nav class="navigation-menu">
+            <h1 class="app-title">Awesome Books</h1>
+            <ul class="menu-list">
+               <li id="list"> List </li>
+               <li> | </li>
+               <li id="create">Add New </li>
+               <li> | </li>
+               <li id="contact">Contact </li>
+            </ul>
+         </nav>
+         <div class="date" id="date"></div>
+      </header>
+      <div class="main-content">
+         <section class="table-section none" id="table-section">
+            <h2 class="title"> All Awesome Books</h2>
+            <div class="table-scroll">
+               <table class="bookTable" id="bookTable">
+                  <tr>
+                     <th class="row-heading">Title</th>
+                     <th class="row-heading"></th>
+                  </tr>
+               </table>
+            </div>
+         </section>
+         <p class="empty none" id="empty">Oh No! There is no book to display. Please use the Form to add the books here
+         </p>
+         <form id="add-form" class="add-form none">
+            <fieldset>
+               <legend>Add New Book </legend>
+               <input type="text" name="title" id="title" placeholder="Enter Book Title" required>
+               <input type="text" name="author" id="author" placeholder="Enter Book Author" required>
+               <div class="btn-container">
+                  <button class="btn" type="button" name="submit" id="add-book-btn">Add</button>
+               </div>
+            </fieldset>
+            <p class="success hidden" id="success"></p>
+         </form>
+         <section class="contact-form none" id="contact-form">
+            <h2 class="title"> Contact Information</h2>
+            <p>Do you have any question or just want to say Hello?</p>
+            <p>you can reach out to us</p>
+            <ul class="contact-list">
+               <li> Our email: mail@mail.com </li>
+               <li> Our phone number: +4352382837492</li>
+               <li> Our address: Streetname 22, 89423 City, Country </li>
+            </ul>
+         </section>
+      </div>
+      <footer class="copyright">
+         <p class="copyright-content">Copyright @ RB 2022</p>
+      </footer>
+   </div>
+   <script src="index.js" type="module"></script>
+</body>
+
+</html>

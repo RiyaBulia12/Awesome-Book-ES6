@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+* {
+  text-align: center;
+  font-family: 'Comic Neue', cursive, sans-serif;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ********************** Begin navigation/footer  ********************* */
+.navigation-menu,
+.copyright {
+  margin: 0.625rem 1.875rem;
+  display: flex;
+}
+
+.app-title,
+.menu-list {
+  font-size: 1.1875rem;
+}
+
+.app-title,
+.title,
+.copyright-content {
+  padding: 0 0.9375rem;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+  position: absolute;
+  right: 10%;
+  margin: 0.9375rem;
+}
+
+.contact-list > li {
+  text-align: justify;
+}
+
+.menu-list > li:hover {
+  color: rgb(50, 84, 158);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  right: 8%;
+}
+
+footer {
+  bottom: 0.4375rem;
+}
+
+/* ********************** End navigation/footer  ********************* */
+
+/* ********************** Begin main content  ********************* */
+.main-content {
+  width: 60%;
+  align-content: center;
+  margin: auto;
+}
+
+form,
+.contact-form {
+  margin: auto;
+  width: 70%;
+}
+
+.bookTable {
+  font-size: large;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.row-heading,
+.data {
+  padding: 0.625rem;
+  margin: 0.625rem;
+}
+
+th,
+td {
+  text-align: start;
+}
+
+th:nth-child(1) {
+  width: 80%;
+}
+
+td {
+  padding: 0 0.625rem;
+}
+
+tr:nth-child(even) {
+  background-color: #e5e5e5;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  padding: 0.4375rem 1.375rem;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0.4375rem;
+  box-shadow: 0.3125rem 0.4375rem 0.3125rem dimgrey;
+  transition: all 1s;
+}
+
+input {
+  height: 1.125rem;
+}
+
+.table-scroll {
+  overflow-y: scroll;
+  height: 28.125rem;
+}
+
+.table-scroll,
+fieldset,
+form input,
+.btn,
+.navigation-menu,
+.copyright {
+  border: 0.1875rem solid black;
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
+form input {
+  padding: 0.6875rem;
+  width: 70%;
+  margin: 0.625rem;
+}
+
+.none {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+legend,
+.title {
+  font-size: 2em;
+}
+
+.contact-form {
+  font-size: 1.25rem;
+}
+
+.contact-list {
+  padding-inline-start: 11rem;
+}
+
+/* ********************** End main content  ********************* */
+
+/* ********************** Begin for screens  ********************* */
+@media (max-width: 780px) {
+  * {
+    font-size: small;
+  }
+
+  .navigation-menu,
+  .copyright {
+    margin: 2%;
+  }
+
+  .app-title,
+  .menu-list,
+  .copyright-content {
+    font-size: 0.9375rem;
+    margin: 1rem 0;
+  }
+
+  .title,
+  legend {
+    font-size: 1.5rem;
+  }
+
+  .menu-list {
+    width: 14rem;
+    right: 0;
+    margin: 1rem;
+    justify-content: space-evenly;
+  }
+
+  .date {
+    right: 4%;
+    font-size: 0.625rem;
+  }
+
+  .main-content,
+  .add-form,
+  .contact-form {
+    width: 90%;
+    margin: auto;
+  }
+
+  .table-scroll {
+    height: 25rem;
+  }
+
+  .contact-list {
+    padding-inline-start: 2.25rem;
+  }
+
+  .contact-list > li {
+    text-align: start;
+  }
+}
+
+/* ********************** End for screens  ********************* */
